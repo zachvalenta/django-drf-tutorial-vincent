@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ws-drf"
+version = "0.1.0"
+description = ""
+authors = ["zachvalenta <zjv5002@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+django = "^3.0.8"
+djangorestframework = "^3.11.0"
+pygments = "^2.6.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

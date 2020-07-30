@@ -10,6 +10,7 @@ help:
 	@echo "mig:        run migrations"
 	@echo "srv:        run dev server"
 	@echo "ind:        open index page"
+	@echo "admin:      open admin page"
 	@echo "todo:       view all todos"
 	@echo
 	@echo "📦 DEPENDENCIES"
@@ -36,6 +37,9 @@ srv:
 
 ind:
 	open http://localhost:8000
+
+admin:
+	open http://localhost:8000/admin
 
 todo:
 	rg -i -B 3 -A 3 todo *.py

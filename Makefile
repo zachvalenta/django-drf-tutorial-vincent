@@ -10,7 +10,8 @@ help:
 	@echo "mig:        run migrations"
 	@echo "srv:        run dev server"
 	@echo "ind:        open index page"
-	@echo "admin:      open admin page"
+	@echo "admin:      open admin"
+	@echo "api:        open DRF browsable API"
 	@echo "todo:       view all todos"
 	@echo
 	@echo "📦 DEPENDENCIES"
@@ -36,10 +37,13 @@ srv:
 	poetry run python manage.py runserver
 
 ind:
-	open http://localhost:8000
+	open http://localhost:8000/index
 
 admin:
 	open http://localhost:8000/admin
+
+api:
+	open http://localhost:8000/snippets
 
 todo:
 	rg -i -B 3 -A 3 todo *.py

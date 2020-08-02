@@ -6,13 +6,15 @@ help:
 	@echo
 	@echo "🛠  UTILS"
 	@echo
-	@echo "m-mig:      make migrations"
 	@echo "mig:        run migrations"
+	@echo "super:      create superuser"
 	@echo "srv:        run dev server"
+	@echo
+	@echo "🖥  UI"
+	@echo
 	@echo "ind:        open index page"
 	@echo "admin:      open admin"
 	@echo "api:        open DRF browsable API"
-	@echo "todo:       view all todos"
 	@echo
 	@echo "📦 DEPENDENCIES"
 	@echo
@@ -27,11 +29,11 @@ help:
 # 🛠 UTILS
 #
 
-m-mig:
-	poetry run python manage.py makemigrations snippets
-
 mig:
 	poetry run python manage.py migrate
+
+super:
+	poetry run python manage.py createsuperuser
 
 srv:
 	poetry run python manage.py runserver
@@ -44,9 +46,6 @@ admin:
 
 api:
 	open http://localhost:8000/snippets
-
-todo:
-	rg -i -B 3 -A 3 todo *.py
 
 #
 # 📦 DEPENDENCIES

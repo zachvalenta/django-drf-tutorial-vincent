@@ -5,8 +5,8 @@ Following along to [Will Vincent DRF tutorial](https://learndjango.com/tutorials
 ## run locally
 
 * install dependencies: `poetry install`
-* make migrations: `make m-mig`
 * run migrations: `make mig`
+* create superuser: `make super`
 * start dev server: `make srv`
 
 ```Makefile
@@ -14,11 +14,15 @@ Following along to [Will Vincent DRF tutorial](https://learndjango.com/tutorials
 
 🛠  UTILS
 
-m-mig:      make migrations
 mig:        run migrations
+super:      create superuser
 srv:        run dev server
+
+🖥  UI
+
 ind:        open index page
-todo:       view all todos
+admin:      open admin
+api:        open DRF browsable API
 
 📦 DEPENDENCIES
 

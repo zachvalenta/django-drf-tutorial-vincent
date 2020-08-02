@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "django-drf-tutorial-vincent"
+name = "django-drf-vincent-blog"
 version = "0.1.0"
 description = ""
 authors = ["zachvalenta <zjv5002@gmail.com>"]
